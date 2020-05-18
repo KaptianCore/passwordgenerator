@@ -1,8 +1,9 @@
 # Password Generator Written In Node.JS
 
-ToDo:
-
+Done:
 - Write Simple JS Script That Generates A Password With Random Symbols, Number & Letters.
+
+ToDo:
 - Interact It Into A Simple HTML Site With A Copy To Clipboard Button.
 
 Future Plans:
