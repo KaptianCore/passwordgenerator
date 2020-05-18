@@ -1,0 +1,23 @@
+{
+  "name": "password_generator",
+  "version": "1.0.0",
+  "description": "A Password Generator Written In Node.JS For My DST Major Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaptianCore/passwordgenerator.git"
+  },
+  "keywords": [
+    "password",
+    "generator"
+  ],
+  "author": "Kaptian Core",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaptianCore/passwordgenerator/issues"
+  },
+  "homepage": "https://github.com/KaptianCore/passwordgenerator#readme"
+}
