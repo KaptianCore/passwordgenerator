@@ -1,7 +1,7 @@
 ## Password Generator 
 
 ### Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+A simple password generator, hoping to build onto it making it look pretty and making it more advanced as I go.
 
 __**Tasks**__
 - [x] Base Password Generator Script
@@ -23,7 +23,7 @@ __**Tasks**__
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-Include logo/demo screenshot etc.
+Coming Soon :)
 
 ## Tech/framework used
 
@@ -31,22 +31,10 @@ Include logo/demo screenshot etc.
 - [Node.JS](https://nodejs.org)
 
 ## Features
-What makes your project stand out?
+Simple But Functional Password Generator *Current* Features:
+- Decide Password length (In Characters)
+- A Mix of Symbols, Letters & Numbers 
 
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-
-## Contribute
-
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
-
-## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
-
-#### Anything else that seems useful
-
-## License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Kaptian Core]()
+Coming Soon
