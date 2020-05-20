@@ -10,9 +10,9 @@ __**Tasks**__
 - [x] Make it print on one line
 - [x] Re Do Github Readme With Check Boxes
 - [x] Fix issue of page reloading on form submission 
-- [ ] Make output box non draggable
+- [x] Make output box non draggable
+- [x] Set a max for the password length 
 - [ ] Make copy to clipboard button 
-- [ ] Set a max for the password length 
 - [ ] Change password input box to be a number input with up and down arrows
 - [ ] Find More Ways To Pretty Up Github ReadMe File
 - [ ] Add Creator listing to the site (in the footer)
