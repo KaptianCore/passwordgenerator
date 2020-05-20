@@ -27,6 +27,8 @@
         <input type="submit" id="submit" value="Submit">
       </form>
       <textarea id="passwordoutput"readonly rows="1" cols="15"></textarea>
+      <br>
+      <button onclick="copyToClipboard()">Copy To Clipboard</button>
       
       <script>
       function pass_gen(form_data) {
@@ -46,7 +48,12 @@
             console.log(pswd);
             document.getElementById("passwordoutput").value = pswd;
         }
-
+        function copyToClipboard(){
+            var passwordtext = document.getElementById("passwordoutput");
+            passwordtext.select()
+            document.execCommand("copy");
+            alert("Your Password Has Been Copied To The Clipboard!")
+        }
       </script> 
   </body>
 </html>
