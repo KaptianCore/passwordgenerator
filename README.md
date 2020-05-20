@@ -9,7 +9,7 @@ __**Tasks**__
 - [x] Make it print the password in a text box 
 - [x] Make it print on one line
 - [x] Re Do Github Readme With Check Boxes
-- [ ] Fix issue of page reloading on form submission 
+- [x] Fix issue of page reloading on form submission 
 - [ ] Make output box non draggable
 - [ ] Make copy to clipboard button 
 - [ ] Set a max for the password length 
