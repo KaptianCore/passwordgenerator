@@ -3,7 +3,9 @@ var hiddenpassword = "";
 function pass_gen(form_data) {
     var password;
     var randArray = ["s","1","3","a","}","0","4","%","(","2","[","z",";","7","&","q","w","-","?","j","k","y",".","8","b","x","m","=","c","i","#","p","+","n","^",";","v","r","{",")","9","*","t","5","d","o","]","$","u","e","@","g",",","_","|","l",">","f","!","h","<","6"];
-    var length = form_data.querySelector("#length").value   
+    var length = form_data.querySelector("#length").value
+    document.querySelector('#copybutton').innerHTML = 'Copy To Clipboard';
+    document.querySelector('#showhidebutton').innerHTML = "Show";  
     document.getElementById("passwordoutput").cols = length;
     for (i = 0; i < length; i++) {
         password = randArray[Math.floor(randArray.length * Math.random())]
