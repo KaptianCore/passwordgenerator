@@ -12,8 +12,9 @@ __**Tasks**__
 - [x] Fix issue of page reloading on form submission 
 - [x] Make output box non draggable
 - [x] Set a max for the password length 
-- [ ] Make copy to clipboard button 
+- [x] Make copy to clipboard button 
 - [ ] Change password input box to be a number input with up and down arrows
+- [ ] Show/Hide Password + Also Make Password Be Hidden When Created
 - [ ] Find More Ways To Pretty Up Github ReadMe File
 - [ ] Add Creator listing to the site (in the footer)
 - [ ] CSS?
