@@ -14,6 +14,7 @@ __**Tasks**__
 - [x] Set a max for the password length 
 - [x] Make copy to clipboard button 
 - [ ] Change password input box to be a number input with up and down arrows
+- [ ] Show/Hide Password + Also Make Password Be Hidden When Created
 - [ ] Find More Ways To Pretty Up Github ReadMe File
 - [ ] Add Creator listing to the site (in the footer)
 - [ ] CSS?
