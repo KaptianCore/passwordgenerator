@@ -2,6 +2,8 @@ var pswd = "";
 var hiddenpassword = "";
 function pass_gen(form_data) {
     var password;
+    pswd = ""
+    hiddenpassword = ""
     document.getElementById("passwordoutput").value = "";
     var randArray = ["s","1","3","a","}","0","4","%","(","2","[","z",";","7","&","q","w","-","?","j","k","y",".","8","b","x","m","=","c","i","#","p","+","n","^",";","v","r","{",")","9","*","t","5","d","o","]","$","u","e","@","g",",","_","|","l",">","f","!","h","<","6"];
     var pswdoutput = document.getElementById("passwordoutput").value
