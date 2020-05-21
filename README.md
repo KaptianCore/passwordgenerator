@@ -36,6 +36,9 @@ Coming Soon :)
 Simple But Functional Password Generator *Current* Features:
 - Decide Password length (In Characters)
 - A Mix of Symbols, Letters & Numbers 
+- Hidden Password System (Show/Hide Button There As Well)
+- Copy To Clipboard Button
+- More Coming Soon!
 
 
 ## How to use?
