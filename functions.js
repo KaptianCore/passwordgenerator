@@ -9,7 +9,6 @@ function pass_gen(form_data) {
     var pswdoutput = document.getElementById("passwordoutput").value
     var length = form_data.querySelector("#length").value
     console.log(pswdoutput);
-    document.querySelector('#copybutton').innerHTML = 'Copy To Clipboard';
     document.querySelector('#showhidebutton').innerHTML = "Show";  
     document.getElementById("passwordoutput").cols = length;
     for (i = 0; i < length; i++) {
