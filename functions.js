@@ -37,6 +37,10 @@ function pass_gen(form_data) {
   }
   function copyToClipboard(){
       var passwordtext = document.getElementById("passwordoutput");
+      if(passwordtext.value == hiddenpassword) {
+          alert("Error: You Must Click The Show Button Before Copying A Password!");
+          return
+      }
       passwordtext.select()
       document.execCommand("copy");
       document.querySelector('#copybutton').innerHTML = 'Copied!';
