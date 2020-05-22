@@ -13,13 +13,14 @@ __**Tasks**__
 - [x] Make output box non draggable
 - [x] Set a max for the password length 
 - [x] Make copy to clipboard button 
-- [ ] Change password input box to be a number input with up and down arrows
-- [ ] Show/Hide Password + Also Make Password Be Hidden When Created
+- [x] Change password input box to be a number input with up and down arrows
+- [x] Fix Glitch With The Password Box Not Replacing Every Time
+- [x] Show/Hide Password + Also Make Password Be Hidden When Created
+- [ ] Add Options To Pick What Characters Are In The Password (Symbols, Letters & Numbers) maybe with multiple arrays then merging them depending on the options set by the user.
 - [ ] Find More Ways To Pretty Up Github ReadMe File
 - [ ] Add Creator listing to the site (in the footer)
 - [ ] CSS?
 - [ ] Responsiveness?
-- [ ] Add Options To Pick What Characters Are In The Password (Symbols, Letters & Numbers)
 ## Code Style 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
@@ -35,6 +36,9 @@ Coming Soon :)
 Simple But Functional Password Generator *Current* Features:
 - Decide Password length (In Characters)
 - A Mix of Symbols, Letters & Numbers 
+- Hidden Password System (Show/Hide Button There As Well)
+- Copy To Clipboard Button
+- More Coming Soon!
 
 
 ## How to use?
