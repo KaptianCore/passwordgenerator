@@ -12,6 +12,28 @@
           });
         });
         </script>
+
+      <script type="text/javascript">
+			var charTypes = {
+				'upper': 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+				'lower': 'abcdefghijklmnopqrstuvwxyz',
+				'number': '0123456789',
+				'special': '!$%^&*()-=+[]{};#:@~,./<>?'
+			};
+			window.onload = function() { 
+				var inputs = document.querySelectorAll('form div textarea');
+				for (var i = 0; i < inputs.length; i++) {
+					var input = inputs[i];
+					var div = input.parentNode;
+					//set initial value
+					var type = div.id;
+					input.value = charTypes[type];
+					input.size = 40;
+					//hook up reset handler
+					var anchor = div.querySelector('a');
+					}(input, type);
+				}
+		</script>
         <style>
             textarea {
                 resize: none;
@@ -20,11 +42,27 @@
   </head>
   <body>
     <h1>Password Generator</h1>
-    
-    <form id="lengthform" action="#" oninput="x.value=parseInt(length.value)"onsubmit="return pass_gen(this)">
+    <script src="functions.js "></script>
+    <form id="lengthform" action="#" oninput="x.value=parseInt(length.value)"onsubmit="return pass_gen();">
+        	<div id="upper">
+					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<span></span>
+				</div>
+				<div id="lower">
+					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<span></span>
+				</div>
+				<div id="number">
+					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<span></span>
+				</div>
+				<div id="special">
+					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<span></span>
+				</div>
         <label for="fname">Password Length:</label><br>
         <input type="range" id="length" name="length" value="10" min="1" max="25">
-        =<output name="x" for="length">10</output>
+        <output name="x" for="length">10</output>
         <br>
         <input type="submit" id="submit" value="Submit">
       </form>
@@ -34,6 +72,5 @@
       <button id="copybutton" onclick="copyToClipboard()">Copy To Clipboard</button>
       <script src="functions.js"></script>
       <br>
-      <h2>Created By Brady</h2>
   </body>
 </html>

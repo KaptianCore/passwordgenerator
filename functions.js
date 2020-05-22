@@ -1,31 +1,46 @@
 var pswd = "";
 var hiddenpassword = "";
+var password = "";
+function _pass_gen(passwordLength, charBlocks) {
+  var allChars = "";
+  for (var i = 0; i < charBlocks.length; i++) {
+    allChars += charBlocks[i];
+  }
+  var numChars = allChars.length;
+  var password = "";
+  for (var i = 1; i <= passwordLength; i++) {
+    password += allChars.charAt(Math.floor(Math.random() * numChars));
+  }
+  return password;
+}
 function pass_gen(form_data) {
-    var password;
     pswd = ""
     hiddenpassword = ""
-    document.getElementById("passwordoutput").value = "";
-    var randArray = ["s","1","3","a","}","0","4","%","(","2","[","z",";","7","&","q","w","-","?","j","k","y",".","8","b","x","m","=","c","i","#","p","+","n","^",";","v","r","{",")","9","*","t","5","d","o","]","$","u","e","@","g",",","_","|","l",">","f","!","h","<","6"];
-    var pswdoutput = document.getElementById("passwordoutput").value
-    var length = form_data.querySelector("#length").value
-    console.log(pswdoutput);
     document.querySelector('#showhidebutton').innerHTML = "Show";  
     document.getElementById("passwordoutput").cols = length;
-    for (i = 0; i < length; i++) {
-        password = randArray[Math.floor(randArray.length * Math.random())]
-        pswd += password + "";   
+    var charBlocks = [];
+    for (id in charTypes) {
+      var isTicked = document.querySelector('div#' + id + ' input[type=checkbox]').checked;
+      var value = document.querySelector('div#' + id + ' textarea').value;
+      if (isTicked) {
+        charBlocks.push(value);
       }
-    document.getElementById("passwordoutput").value = pswd;
-    for(i = 0; i < length; i++) {
+    }
+    var $length = document.getElementById('length');
+    var passwordLength = parseInt($length.value)
+    
+    password = _pass_gen(passwordLength, charBlocks);
+    for(i = 0; i < passwordLength; i++) {
         hidpassword = "*"
         hiddenpassword += hidpassword + "";
     }
+    
     document.getElementById("passwordoutput").value = hiddenpassword;
 }
   function showhide(){
     var pswdbox = document.querySelector('#showhidebutton').innerHTML
     if(pswdbox == "Show"){
-        document.getElementById("passwordoutput").value = pswd;
+        document.getElementById("passwordoutput").value = password;
         document.querySelector('#showhidebutton').innerHTML = "Hide";  
     }else{
         document.getElementById("passwordoutput").value = hiddenpassword;  
@@ -37,11 +52,10 @@ function pass_gen(form_data) {
   }
   function copyToClipboard(){
       var passwordtext = document.getElementById("passwordoutput");
-      document.getElementById("passwordoutput").value = pswd;
+      document.getElementById("passwordoutput").value = password;
       passwordtext.select()
       document.execCommand("copy");
       document.querySelector('#copybutton').innerHTML = 'Copied!';
       document.getElementById("passwordoutput").value = hiddenpassword; 
       setTimeout(copyreset, 1000)
   }
-  
