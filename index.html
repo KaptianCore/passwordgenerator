@@ -44,7 +44,11 @@
     <h1>Password Generator</h1>
     <script src="functions.js "></script>
     <form id="lengthform" action="#" oninput="x.value=parseInt(length.value)"onsubmit="return pass_gen();">
-        	<div id="upper">
+        <label for="fname">Password Length:</label><br>
+        <input type="range" id="length" name="length" value="10" min="1" max="25">
+        <output name="x" for="length">10</output>
+        <br>
+        <div id="upper">
 					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
 					<span></span>
 				</div>
@@ -60,10 +64,6 @@
 					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
 					<span></span>
 				</div>
-        <label for="fname">Password Length:</label><br>
-        <input type="range" id="length" name="length" value="10" min="1" max="25">
-        <output name="x" for="length">10</output>
-        <br>
         <input type="submit" id="submit" value="Submit">
       </form>
       <textarea id="passwordoutput"readonly rows="1" cols="15"></textarea>
