@@ -38,6 +38,7 @@ Simple But Functional Password Generator *Current* Features:
 - A Mix of Symbols, Letters & Numbers 
 - Hidden Password System (Show/Hide Button There As Well)
 - Copy To Clipboard Button
+- Ability To Select What You Want In The Password.
 - More Coming Soon!
 
 
