@@ -33,9 +33,14 @@ function pass_gen(form_data) {
         document.querySelector('#showhidebutton').innerHTML = "Show";
     }
   }
+  function copyreset() {
+    document.querySelector('#copybutton').innerHTML = 'Copy To Clipboard!'
+  }
   function copyToClipboard(){
       var passwordtext = document.getElementById("passwordoutput");
       passwordtext.select()
       document.execCommand("copy");
       document.querySelector('#copybutton').innerHTML = 'Copied!';
+      setTimeout(copyreset, 1000)
   }
+  
