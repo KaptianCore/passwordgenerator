@@ -1,0 +1,19 @@
+{
+  "name": "passwordgenerator",
+  "version": "1.0.0",
+  "description": "Password Generator With HTML & JS",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaptianCore/passwordgenerator.git"
+  },
+  "author": "Kaptian Core",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaptianCore/passwordgenerator/issues"
+  },
+  "homepage": "https://kaptiancore.github.io/index.html"
+}
