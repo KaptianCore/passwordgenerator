@@ -48,7 +48,7 @@ function pass_gen(form_data) {
     }
   }
   function copyreset() {
-    document.querySelector('#copybutton').innerHTML = 'Copy To Clipboard!'
+    document.querySelector('#copybutton').innerHTML = 'Copy'
   }
   function copyToClipboard(){
       var passwordtext = document.getElementById("passwordoutput");

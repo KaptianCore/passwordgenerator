@@ -42,12 +42,14 @@
         </style>
   </head>
   <body>
+    <center>
     <h1>Password Generator</h1>
     <script src="functions.js "></script>
     <form id="lengthform" action="#" oninput="x.value=parseInt(length.value)"onsubmit="return pass_gen();">
-        <label for="fname">Password Length:</label><br>
-        <input type="range" id="length" name="length" value="10" min="1" max="25">
+        <label for="fname">Length</label><br>
+        <input type="range" id="length" name="length" value="10" min="1" max="20">
         <output name="x" for="length">10</output>
+        <input type="submit" id="submit" value="Submit">
         <br>
         <div id="upper">
 					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
@@ -64,14 +66,14 @@
 				<div id="special">
 					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
 					<span></span>
-				</div>
-        <input type="submit" id="submit" value="Submit">
+        </div>
       </form>
+      <button id="copybutton" onclick="copyToClipboard()">Copy</button>
       <textarea id="passwordoutput"readonly rows="1" cols="15"></textarea>
       <button id="showhidebutton" onclick="showhide()">Show</button>
       <br>
-      <button id="copybutton" onclick="copyToClipboard()">Copy To Clipboard</button>
       <script src="functions.js"></script>
+    </center>
       <br>
   </body>
 </html>
