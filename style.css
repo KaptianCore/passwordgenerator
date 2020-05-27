@@ -20,5 +20,20 @@
     }
 .checkmark {
     color: #60a3bc
+}
+textarea { 
+    border: none; 
+    resize: none;
+    outline: none;
+    background: #cccccc;
+}
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
 }

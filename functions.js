@@ -58,4 +58,16 @@ function pass_gen(form_data) {
       // document.querySelector('#copybutton').innerHTML = 'Copied!';
       // document.getElementById("passwordoutput").value = hiddenpassword; 
       // setTimeout(copyreset, 1000)
-  }
+}
+  function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var darkmodebutton = document.getElementById("darkmodebutton").style.display = "none";
+    var lightmodebutton = document.getElementById("lightmodebutton").style.display = "block";
+}
+  function lightMode() {
+    var darkmodebutton = document.getElementById("darkmodebutton").style.display = "block";
+    var lightmodebutton = document.getElementById("lightmodebutton").style.display = "none"
+    var element = document.body;
+    element.classList.toggle("light-mode")
+}

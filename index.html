@@ -36,13 +36,7 @@
 					var anchor = div.querySelector('a');
 					}(input, type);
 				}
-		</script>
-        <style>
-            textarea {
-                resize: none;
-                outline: none;
-            }
-        </style>
+      </script> 
   </head>
   <body>
     <center>
@@ -73,6 +67,8 @@
 					<span></span>
         </div>
       </form>
+      <button type="button" id="darkmodebutton" class="button" onclick="darkMode()"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
+      <button type="button" id="lightmodebutton" style="display: none;" class="button" onclick="lightMode()"><i class="fa fa-sun-o" aria-hidden="true"></i></button>
       <br>
       <script src="functions.js"></script>
     </center>
