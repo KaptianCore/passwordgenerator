@@ -26,7 +26,7 @@ __**Tasks**__
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-![](https://i.imgur.com/nIajr4c.gif)
+![](https://i.imgur.com/c5CgcOR.gifv)
 
 ## Tech/framework used
 
