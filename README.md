@@ -26,7 +26,7 @@ __**Tasks**__
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-![](https://i.imgur.com/c5CgcOR.gifv)
+![](https://i.imgur.com/c5CgcOR.gif)
 
 ## Tech/framework used
 
@@ -40,6 +40,8 @@ Simple But Functional Password Generator *Current* Features:
 - Hidden Password System (Show/Hide Button There As Well)
 - Copy To Clipboard Button
 - Ability To Select What You Want In The Password.
+- On Settings Change Regen Password.
+- Light/Dark Mode Button
 - More Coming Soon!
 
 
