@@ -1,6 +1,9 @@
 .char-select{
-    background: #60a3bc;
-    text-emphasis-color: #fff;
+    border: none; 
+    resize: none;
+    outline: none;
+    background: #cccccc;
+    color: white;
 }
 
 .button {

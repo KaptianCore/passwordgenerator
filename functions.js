@@ -66,8 +66,8 @@ function pass_gen(form_data) {
     var lightmodebutton = document.getElementById("lightmodebutton").style.display = "block";
 }
   function lightMode() {
-    var darkmodebutton = document.getElementById("darkmodebutton").style.display = "block";
-    var lightmodebutton = document.getElementById("lightmodebutton").style.display = "none"
     var element = document.body;
     element.classList.toggle("light-mode")
+    var darkmodebutton = document.getElementById("darkmodebutton").style.display = "block";
+    var lightmodebutton = document.getElementById("lightmodebutton").style.display = "none";
 }
