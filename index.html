@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Password Generator</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
@@ -13,6 +14,7 @@
           });
         });
         </script>
+      
 
       <script type="text/javascript">
 			var charTypes = {
@@ -28,7 +30,7 @@
 					var div = input.parentNode;
 					//set initial value
 					var type = div.id;
-					input.value = charTypes[type];
+					input.id = charTypes[type];
 					input.size = 40;
 					//hook up reset handler
 					var anchor = div.querySelector('a');
@@ -38,6 +40,7 @@
         <style>
             textarea {
                 resize: none;
+                outline: none;
             }
         </style>
   </head>
@@ -46,31 +49,30 @@
     <h1>Password Generator</h1>
     <script src="functions.js "></script>
     <form id="lengthform" action="#" oninput="x.value=parseInt(length.value)"onsubmit="return pass_gen();">
-        <label for="fname">Length</label><br>
-        <input type="range" id="length" name="length" value="10" min="1" max="20">
+      <textarea id="passwordoutput" readonly rows="1" cols=32></textarea> 
+      <button id="copybutton" class="button" onclick="copyToClipboard()"><i class="fa fa-copy"></i></button>
+      <button type="submit" class="button" id="submit"><i class="fa fa-refresh"></i></button>
+      <!-- <button id="showhidebutton" class="button" onclick="showhide()"><i id="shicon" class="fa fa-eye"></i></i></button> -->
+      <br>
+        <input type="range" id="length" name="length" value="10" min="1" max="20" onchange="pass_gen()">
         <output name="x" for="length">10</output>
-        <input type="submit" id="submit" value="Submit">
-        <br>
         <div id="upper">
-					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<input class="checkmark" id="uppercheck" type="checkbox" onchange="pass_gen()" checked><textarea class="char-select" readonly rows="1" cols="9">Uppercase</textarea>
 					<span></span>
 				</div>
 				<div id="lower">
-					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<input class="checkmark" id="lowercheck" type="checkbox" onchange="pass_gen()" checked><textarea class="char-select" readonly rows="1" cols="9">Lowercase</textarea>
 					<span></span>
 				</div>
 				<div id="number">
-					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<input class="checkmark" type="checkbox" id="numbercheck" onchange="pass_gen()" checked><textarea class="char-select" readonly rows="1" cols="9">Numbers</textarea>
 					<span></span>
 				</div>
 				<div id="special">
-					<input type="checkbox" checked><textarea readonly rows="1" cols="30"></textarea>
+					<input class="checkmark" type="checkbox" id="symbolscheck" onchange="pass_gen()" checked><textarea class="char-select" readonly rows="1" cols="9">Symbols</textarea>
 					<span></span>
         </div>
       </form>
-      <button id="copybutton" onclick="copyToClipboard()">Copy</button>
-      <textarea id="passwordoutput"readonly rows="1" cols="15"></textarea>
-      <button id="showhidebutton" onclick="showhide()">Show</button>
       <br>
       <script src="functions.js"></script>
     </center>

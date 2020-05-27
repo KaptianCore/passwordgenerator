@@ -1,0 +1,24 @@
+.char-select{
+    background: #60a3bc;
+    text-emphasis-color: #fff;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+.button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    }
+.checkmark {
+    color: #60a3bc
+
+}

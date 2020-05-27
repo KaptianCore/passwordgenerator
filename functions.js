@@ -16,12 +16,12 @@ function _pass_gen(passwordLength, charBlocks) {
 function pass_gen(form_data) {
     pswd = ""
     hiddenpassword = ""
-    document.querySelector('#showhidebutton').innerHTML = "Show";  
+    // document.querySelector('#showhidebutton').innerHTML = "Show";  
     document.getElementById("passwordoutput").cols = length;
     var charBlocks = [];
     for (id in charTypes) {
       var isTicked = document.querySelector('div#' + id + ' input[type=checkbox]').checked;
-      var value = document.querySelector('div#' + id + ' textarea').value;
+      var value = document.querySelector('div#' + id + ' textarea').id;
       if (isTicked) {
         charBlocks.push(value);
       }
@@ -35,27 +35,27 @@ function pass_gen(form_data) {
         hiddenpassword += hidpassword + "";
     }
     
-    document.getElementById("passwordoutput").value = hiddenpassword;
+    document.getElementById("passwordoutput").value = password;
 }
-  function showhide(){
-    var pswdbox = document.querySelector('#showhidebutton').innerHTML
-    if(pswdbox == "Show"){
-        document.getElementById("passwordoutput").value = password;
-        document.querySelector('#showhidebutton').innerHTML = "Hide";  
-    }else{
-        document.getElementById("passwordoutput").value = hiddenpassword;  
-        document.querySelector('#showhidebutton').innerHTML = "Show";
-    }
-  }
-  function copyreset() {
-    document.querySelector('#copybutton').innerHTML = 'Copy'
-  }
+  // function showhide(){
+  //   var pswdbox = document.querySelector('#showhidebutton').innerHTML
+  //   if(pswdbox == "Show"){
+  //       document.getElementById("passwordoutput").value = password;
+  //       document.querySelector('#showhidebutton').innerHTML = "Hide";  
+  //   }else{
+  //       document.getElementById("passwordoutput").value = hiddenpassword;  
+  //       document.querySelector('#showhidebutton').innerHTML = "Show";
+  //   }
+  // }
+  // function copyreset() {
+  //   document.querySelector('#copybutton').innerHTML = 'Copy'
+  // }
   function copyToClipboard(){
-      var passwordtext = document.getElementById("passwordoutput");
-      document.getElementById("passwordoutput").value = password;
+      var passwordtext = document.getElementById("passwordoutput").value;
+      // document.getElementById("passwordoutput").value = password;
       passwordtext.select()
       document.execCommand("copy");
-      document.querySelector('#copybutton').innerHTML = 'Copied!';
-      document.getElementById("passwordoutput").value = hiddenpassword; 
-      setTimeout(copyreset, 1000)
+      // document.querySelector('#copybutton').innerHTML = 'Copied!';
+      // document.getElementById("passwordoutput").value = hiddenpassword; 
+      // setTimeout(copyreset, 1000)
   }
