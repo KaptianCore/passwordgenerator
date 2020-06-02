@@ -43,7 +43,7 @@
     <script src="functions.js "></script>
     <div class="box">
     <form id="lengthform" action="#" oninput="x.value=parseInt(length.value)"onsubmit="return pass_gen();">
-      <div id="topbox">
+      <div id="topbox" class="topbox">
       <textarea class="passwordoutput" readonly rows="1" cols=32></textarea> 
       <button type="button" class="topbox-buttons" id="copybutton" onclick="copyToClipboard()"><i class="fa fa-copy"></i></button>
       <button type="submit" class="topbox-buttons" id="submit"><i class="fa fa-refresh"></i></button>
@@ -69,20 +69,21 @@
 					<input class="checkmark" type="checkbox" id="symbolscheck" onchange="pass_gen()" checked><textarea class="char-select" readonly rows="1" cols="9">Symbols</textarea>
 					<span></span>
         </div>
-        <div class="readability">
-          <div id="say">
-            <input class="checkmark" id="saycheck" type="checkbox" onchange="pass_gen()" checked><textarea class="readability-box" readonly rows="1" cols="13">Easy To Say</textarea>
-            <span></span>
-          </div>
-          <div id="read">
-            <input class="checkmark" id="readcheck" type="checkbox" onchange="pass_gen()" checked><textarea class="readability-box" readonly rows="1" cols="13">Easy To Read</textarea>
-            <span></span>
-          </div>
-          <div id="all">
-            <input class="checkmark" type="checkbox" id="allcheck" onchange="pass_gen()" checked><textarea class="readability-box" readonly rows="1" cols="13">All Characters</textarea>
-            <span></span>
-          </div>
       </div>
+      <div class="readability">
+        <div id="say">
+          <input class="checkmark" id="saycheck" type="checkbox" onchange="pass_gen()" checked><textarea class="readability-box" readonly rows="1" cols="13">Easy To Say</textarea>
+          <span></span>
+        </div>
+        <div id="read">
+          <input class="checkmark" id="readcheck" type="checkbox" onchange="pass_gen()" checked><textarea class="readability-box" readonly rows="1" cols="13">Easy To Read</textarea>
+          <span></span>
+        </div>
+        <div id="all">
+          <input class="checkmark" type="checkbox" id="allcheck" onchange="pass_gen()" checked><textarea class="readability-box" readonly rows="1" cols="13">All Characters</textarea>
+          <span></span>
+        </div>
+    </div>
       </form>
       </div>
       <button type="button" id="darkmodebutton" class="button" onclick="darkMode()"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
