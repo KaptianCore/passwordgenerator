@@ -17,7 +17,7 @@ function pass_gen(form_data) {
     pswd = ""
     hiddenpassword = ""
     // document.querySelector('#showhidebutton').innerHTML = "Show";  
-    document.getElementById("passwordoutput").cols = length;
+    document.querySelector('div#topbox textarea').cols = length;
     var charBlocks = [];
     for (id in charTypes) {
       var isTicked = document.querySelector('div#' + id + ' input[type=checkbox]').checked;
@@ -34,8 +34,8 @@ function pass_gen(form_data) {
         hidpassword = "*"
         hiddenpassword += hidpassword + "";
     }
-    
-    document.getElementById("passwordoutput").value = password;
+    document.querySelector('div#topbox textarea').value = password;
+    // document.getElementById("topbox").getElementsByClassName("passwordoutput").value = password;
 }
   // function showhide(){
   //   var pswdbox = document.querySelector('#showhidebutton').innerHTML
