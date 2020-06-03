@@ -51,7 +51,7 @@ function pass_gen(form_data) {
   //   document.querySelector('#copybutton').innerHTML = 'Copy'
   // }
   function copyToClipboard(){
-      var passwordtext = document.getElementById("passwordoutput");
+      var passwordtext = document.querySelector("div#topbox textarea");
       // document.getElementById("passwordoutput").value = password;
       passwordtext.select()
       document.execCommand("copy");

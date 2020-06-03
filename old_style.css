@@ -1,18 +1,28 @@
+/* OLD CSS FILE */
+* {
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #d9e1e2;
 }
 .box{
-    width: 300px;
+    width: 200px;
     height: 175px;
     border: 5px solid #d32d27;
     display: center;
+    margin: 0 auto;
     background-color: #d9e1e2;
 }
 #topbox{
-    width: 290px;
+    margin: 0 auto;
+    width: 390px;
     height: 30px;
     border: 5px solid #d9e1e2;
     background-color: #d9e1e2
+}
+.passwordoutput {
+    margin: 0 auto;
 }
 .topbox-buttons{
     color: #fff;
@@ -24,14 +34,25 @@ body{
     /* display: inline-block; */
     border: none;
     transition: all 0.4s ease 0s;
+    margin: 0 auto;
 }
 .topbox-buttons:hover {
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
     transition: all 0.4s ease 0s;
+    }
+.leftbox {
+    width: 200px;
+    height: 75px;
+    position: relative;
+    left: 0px;
+    float: left;
 }
 .char-select-box{
     width: 200px;
     height: 75px;
+    position: relative;
+    left: 90px;
+    float: right;
 }
 .char-select{
     border: none; 
@@ -40,7 +61,7 @@ body{
     background: #cccccc;
     color: white;
 }
-/* .readability{
+.readability{
     border: none; 
     resize: none;
     outline: none;
@@ -48,9 +69,9 @@ body{
     color: white;
 }
 .readability-box{
-    width: 135px;
+    width: 130px;
     height: 100px;
-} */
+}
 .button {
     color: #fff !important;
     text-transform: uppercase;
