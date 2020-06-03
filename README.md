@@ -17,16 +17,15 @@ __**Tasks**__
 - [x] Fix Glitch With The Password Box Not Replacing Every Time
 - [x] Show/Hide Password + Also Make Password Be Hidden When Created
 - [x] Add Options To Pick What Characters Are In The Password (Symbols, Letters & Numbers) maybe with multiple arrays then merging them depending on the options set by the user.
-- [ ] Find More Ways To Pretty Up Github ReadMe File
+- [x] Find More Ways To Pretty Up Github ReadMe File
 - [ ] Use Github Actions To Make Deployment Tests With The Password Gen (Make Sure It Can Output Password, Show, Hide, Etc)
 - [ ] Add Creator listing to the site (in the footer)
-- [ ] CSS?
-- [ ] Responsiveness?
+- [x] CSS?
 ## Code Style 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-![](https://i.imgur.com/c5CgcOR.gif)
+![https://kaptiancore.github.io/passwordgenerator](https://i.imgur.com/GoEXget.gif)
 
 ## Tech/framework used
 
@@ -41,7 +40,7 @@ Simple But Functional Password Generator *Current* Features:
 - Copy To Clipboard Button
 - Ability To Select What You Want In The Password.
 - On Settings Change Regen Password.
-- Light/Dark Mode Button
+- Nice Looking Colour Scheme
 - More Coming Soon!
 
 
