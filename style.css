@@ -1,6 +1,38 @@
 body{
     background-color: #d9e1e2;
 }
+h1 {
+    color: #d32d27;
+}
+#length {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #333f48;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  #length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #af0809;
+    cursor: pointer;
+  }
+  
+  #length::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
 .box{
     width: 300px;
     height: 175px;
@@ -15,10 +47,10 @@ body{
     background-color: #d9e1e2
 }
 .topbox-buttons{
-    color: #fff;
+    color: #d9e1e2;
     text-transform: uppercase;
     text-decoration: none;
-    background: #60a3bc;
+    background: #af0809;
     padding: 5px;
     border-radius: 10px;
     /* display: inline-block; */
