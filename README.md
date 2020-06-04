@@ -19,13 +19,14 @@ __**Tasks**__
 - [x] Add Options To Pick What Characters Are In The Password (Symbols, Letters & Numbers) maybe with multiple arrays then merging them depending on the options set by the user.
 - [x] Find More Ways To Pretty Up Github ReadMe File
 - [ ] Use Github Actions To Make Deployment Tests With The Password Gen (Make Sure It Can Output Password, Show, Hide, Etc)
-- [ ] Add Creator listing to the site (in the footer)
+- [ ] Add A Nice Header & Footer
+- [ ] Add Icon To Go To Github Repo
 - [x] CSS?
 ## Code Style 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-![https://kaptiancore.github.io/passwordgenerator](https://i.imgur.com/GoEXget.gif)
+![https://kaptiancore.github.io/passwordgenerator   ](https://i.imgur.com/GoEXget.gif)
 
 ## Tech/framework used
 
