@@ -1,4 +1,5 @@
 ## Password Generator 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b28a69ab-1d04-4d07-95a4-cee8fa8257ca/deploy-status)](https://app.netlify.com/sites/nostalgic-varahamihira-e88bf5/deploys)
 
 ### Motivation
 A simple password generator, hoping to build onto it making it look pretty and making it more advanced as I go.
